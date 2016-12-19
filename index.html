@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Widget</title>
+    <script src="https://signin.kontomatik.com/assets/signin-widget.js">
+    </script>
+  </head>
+  <body>
+    <div id="kontomatik"></div>
+    <script>
+      embedKontomatik({
+        client: '', // add your test client id
+        divId: 'kontomatik',
+        onSuccess: function(target, sessionId, sessionIdSignature, options) {
+          document.getElementById('kontomatik').innerHTML= "" + sessionId + " " + sessionIdSignature;
+        },
+        locale: 'en',
+        showFavicons: true
+      });
+    </script>
+  </body>
+</html>
