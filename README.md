@@ -26,6 +26,11 @@ Let's say we want to call the <strong>default-import</strong> command.
 
 First, edit the index.html page and set the client parameter to the value of your **test** client id. 
 Also edit the default-import.sh script and set the APIKEY variable to the value of your **test** API key. 
+_Since all of the shell scripts require a valid APIKEY, you might as well save some time and edit all of them in one fell swoop. To do this, open a terminal window,  navigate to the directory where the scripts are located and enter the command:_
+
+        perl -pi -e "s/APIKEY=\"\"/APIKEY=\"***********\"/" *.sh
+
+_Of course, you need to replace the asterisks with your actual APIKEY string but be careful to preserve everything else._
 
 Next, load the index.html page in your browser and login to a bank, using mock or real credentials.
 If the login is successful, the page will display the sessionId and sessionIdSignature parameters in a single line.
