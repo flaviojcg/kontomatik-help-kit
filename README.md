@@ -11,7 +11,7 @@ The aim is to skip the laborious task of correctly passing the required paramete
 Requirements
 ------------
 
-- A valid client id and API key. If you don't have them, you can request your access [here](http://kontomatik.com). 
+- A valid client id and API key. If you don't have them, you can request your access [here](http://kontomatik.com/contact-us). 
 - A text editor, such as Vim. 
 - A computer running OSX or Linux. (OSX is the better choice, 'cos frankly I haven't tested the scripts on Linux). 
 
