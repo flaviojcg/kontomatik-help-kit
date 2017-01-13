@@ -10,7 +10,7 @@
 APIKEY="" 
 
 sendGetRequest() {
-    ARGS="-X GET -d apiKey=$APIKEY -d sessionId=$1 -d sessionIdSignature=$2" 
+    ARGS="-G -d apiKey=$APIKEY -d sessionId=$1 -d sessionIdSignature=$2" 
     ARGS="$ARGS https://test.api.kontomatik.com/v1/command/$3.xml" 
     curl $ARGS
 }
