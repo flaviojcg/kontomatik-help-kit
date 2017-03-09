@@ -11,7 +11,6 @@ APIKEY="54689db20f69a84961672d65b1e76a24894d070daaee618078eef7c30d6e9d73"
 
 sendPostRequest() {
     ARGS=" -d apiKey=$APIKEY -d sessionId=$1 -d sessionIdSignature=$2"
-    ARGS="$ARGS -d since=`date +%Y-%m-%d`" # current date in YYYY-MM-DD format
     ARGS="$ARGS https://test.api.kontomatik.com/v1/command/import-owners.xml -s" 
     curl $ARGS
 }
