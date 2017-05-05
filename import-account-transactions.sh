@@ -24,5 +24,5 @@ elif [ "$APIKEY" == "" ]
 then 
     echo "Test api key not set. Please edit this script."
 else 
-    sendPostRequest $1 $2 $3 $APIKEY
+    sendPostRequest $1 $2 $3 
 fi

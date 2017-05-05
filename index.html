@@ -11,8 +11,10 @@
       embedKontomatik({
         client: '', // add your test client id
         divId: 'kontomatik',
+        ownerExternalId: 12345,
+        showDefaultTarget: false,
         onSuccess: function(target, sessionId, sessionIdSignature, options) {
-          document.getElementById('kontomatik').innerHTML= "" + sessionId + " " + sessionIdSignature;
+          document.getElementById('kontomatik').innerHTML = sessionId + " " + sessionIdSignature;
         },
         locale: 'en',
         showFavicons: true
