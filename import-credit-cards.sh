@@ -7,7 +7,7 @@
 #!/bin/sh
 
 # put your api key string inside the double quotes:
-APIKEY="54689db20f69a84961672d65b1e76a24894d070daaee618078eef7c30d6e9d73" 
+APIKEY=""
 
 sendPostRequest() {
     ARGS=" -d apiKey=$APIKEY -d sessionId=$1 -d sessionIdSignature=$2" 
